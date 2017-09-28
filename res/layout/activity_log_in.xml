@@ -1,0 +1,145 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context=".controllers.Login"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"/>
+
+        <TextView
+                android:id="@+id/login_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <!-- Login form -->
+
+
+    <RelativeLayout
+            android:id="@+id/login_form"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/loginPassword"
+            android:layout_alignStart="@+id/loginUser"
+            android:layout_alignLeft="@+id/loginUser"
+            android:visibility="visible"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/cclouds_users"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView" android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+
+            <!-- <TextView
+                     android:id="@+id/loginUser"
+                     android:padding="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:hint="@string/userName"
+                     android:maxLines="1"
+                     android:inputType="text"
+                     android:singleLine="true"
+                     android:textSize="20sp"
+                     android:layout_alignParentStart="true"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginStart="40dp"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginEnd="40dp"
+                     />
+ -->
+            <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userPassword"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Entrar"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"/>
+            <!--android:layout_below="@+id/loginUser"-->
+            <!--
+            android:layout_alignStart="@+id/loginUser"
+            android:layout_alignLeft="@+id/loginUser"
+            android:layout_alignEnd="@+id/loginUser"
+            android:layout_alignRight="@+id/loginUser"
+-->
+
+
+            <Button
+                    android:id="@+id/startSession"
+                    style="?android:attr/buttonStyleToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:text="@string/startSession"
+                    android:textSize="20dp"
+                    android:background="@drawable/button_selector"
+                    android:layout_alignTop="@+id/rememberPassword"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            <CheckBox
+                    android:id="@+id/rememberPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/rememberPssword"
+                    android:layout_below="@+id/loginPassword"
+                    android:layout_alignStart="@+id/loginPassword"
+                    android:layout_alignLeft="@+id/loginPassword"
+                    android:visibility="invisible"
+                    android:checked="false">
+            </CheckBox>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:text="@string/userRegister"
+                    android:id="@+id/userRegisterByEmail"
+                    android:paddingBottom="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

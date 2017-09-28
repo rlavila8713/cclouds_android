@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <item
+                        android:id="@+id/contactsBackups"
+                        android:title="@string/initContactsBackup"
+                        android:icon="@drawable/up_s"
+                        />
+                <item
+                        android:id="@+id/contactsSynchsendSms"
+                        android:title="@string/sendSMS"
+                        />
+                <item
+                        android:id="@+id/contactsSynchsendEmail"
+                        android:title="@string/sendEmail"
+                        />
+                <item
+                        android:id="@+id/userProfile"
+                        android:title="@string/userProfile"
+                        />
+</menu>

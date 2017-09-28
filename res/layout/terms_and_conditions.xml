@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/linear1">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_weight="15"
+            android:paddingTop="10dp"
+    >
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/termsAndConditionsAgreements"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texto_principal"
+                android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_weight="65"
+    >
+
+        <ScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2"
+
+            >
+                <TextView android:textAppearance="?android:textAppearanceMedium"
+                          android:textColor="@android:color/black"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="12.0dip"
+                          android:layout_marginRight="4.0dip"
+                          android:text="@string/Agreements"
+                          android:id="@+id/txt1"
+                          android:layout_weight="0.31"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="20">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <CheckBox
+                    android:id="@+id/acceptTerms"
+                    android:text="@string/acceptTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="#242963">
+            </CheckBox>
+            <Button android:id="@+id/acceptTermsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/checkmark"
+                    android:layout_marginRight="30dp"
+                    android:enabled="true"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="30dp"
+                    android:layout_below="@+id/acceptTerms"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/item_panel"
+                android:paddingRight="36.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="58.0dip">
+
+                <ImageView
+                        android:id="@+id/contactPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/default_head"
+                        />
+                <TextView
+                        android:id="@+id/firstName"
+                        android:textAppearance="?android:textAppearanceMediumInverse"
+                        android:textColor="@drawable/gray_white_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="@string/firstName"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_alignTop="@+id/contactPhoneNumber" android:layout_toRightOf="@+id/contactSelected"
+                        android:layout_toEndOf="@+id/contactSelected"/>
+                <TextView
+                        android:id="@+id/phoneNumber"
+                        android:textAppearance="?android:textAppearanceSmallInverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/phoneNumber"
+                        android:textColor="@drawable/gray_white_selector"
+                        android:layout_alignBottom="@+id/contactSelected"
+                        android:layout_toRightOf="@+id/contactSelected"
+                        android:layout_toEndOf="@+id/contactSelected"/>
+                <CheckBox
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contactSelected"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignBottom="@+id/contactPhoneNumber"
+                        android:checked="false"/>
+
+        </RelativeLayout>
+</LinearLayout>

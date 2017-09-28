@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context=".views.usuario.ContactSynch"
+>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+    >
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+            <Button
+                    android:id="@+id/send_email"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/send_email"
+                    android:background="@drawable/button_selector"
+                    android:onClick="onButtonClick"
+                    android:text="@string/sendEmail"/>
+            <Button
+                    android:id="@+id/send_sms"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/send_sms"
+                    android:background="@drawable/button_selector"
+                    android:onClick="onButtonClick"
+                    android:text="@string/sendSMS"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+            <Button
+                    android:id="@+id/contact_restore"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/data_backup"
+                    android:onClick="onButtonClick"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/initContactsBackup"/>
+            <Button
+                    android:id="@+id/user_profile"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/user_profile"
+                    android:background="@drawable/button_selector"
+                    android:onClick="onButtonClick"
+                    android:text="@string/userProfile"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+            <Button
+                    android:id="@+id/about"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/about"
+                    android:onClick="onButtonClick"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/about"/>
+            <Button
+                    android:id="@+id/settings"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/support"
+                    android:background="@drawable/button_selector"
+                    android:onClick="onButtonClick"
+                    android:text="@string/settings"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/abc_ab_bottom_solid_light_holo"
+            android:layout_height="48dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/contactsSynced"
+                android:textAlignment="center"
+                android:gravity="left|center_vertical"
+                android:id="@+id/synch_status_message_front"
+                android:layout_gravity="center_horizontal|center_vertical"
+        />
+        <ImageView
+                android:src="@drawable/sync"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/curvedArrows"
+                android:visibility="gone"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/optionsButton"
+                android:src="@drawable/email"
+                android:background="@drawable/button_selector"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

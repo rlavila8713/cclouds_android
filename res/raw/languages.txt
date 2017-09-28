@@ -1,0 +1,24 @@
+server : flag : own_name : english_name
+fr;fr;Français;French
+en;en_us;English;English
+de;de;Deutsch;German
+es;es;Español;Spanish
+pt;br;Português Brasileiro;Brazilian Portuguese
+pt;pt;Português;Portuguese
+it;it;Italiano;Italian
+vi;vi;Tiếng Việt;Vietnamese
+th;th;ภาษาไทย;Thai
+zh_CN;zhs;简体中文;Chinese (Simplified)
+zh_TW;zht;繁體中文;Chinese (Traditional)
+ja;ja;日本語;Japanese
+ko;kr;한국어;Korean
+hi;hi;हिन्दी;Hindi
+pl;pl;Polski;Polish
+ar;ar;العربية;Arabic
+he;he;עברית;Hebrew
+el;el;Ελληνικά;Greek
+sv;sv;Svenska;Swedish
+da;da;Dansk;Danish
+ru;ru;Русский;Russian
+nl;nl;Nederlands;Dutch
+tr;tr;Türkçe;Turkish

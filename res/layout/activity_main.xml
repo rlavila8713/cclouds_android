@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.MainActivity"
+>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/progressBar">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/network_status_image"
+                android:background="@drawable/wifi"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/try_again_button"
+            android:layout_alignStart="@+id/try_again_button"/>
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:visibility="invisible"
+            android:src="@drawable/rotate"
+            android:background="@drawable/button_selector"
+            android:id="@+id/try_again_button"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_below="@+id/network_status2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:text="@string/network_is_not_connected"
+            android:id="@+id/network_status1"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/network_is_not_connected_pls_check_it"
+            android:id="@+id/network_status2"
+            android:visibility="invisible"
+            android:layout_below="@+id/network_status1" android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

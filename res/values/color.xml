@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#ffffffff</color>
+    <color name="list_background">#ff303030</color>
+    <color name="list_background_pressed">#ff992416</color>
+    <color name="list_divider">#ff272727</color>
+    <color name="color_texto_principal">#ff00afef</color>
+    <color name="color_texto_blanco">#ffffffff</color>
+    <color name="color_texto_secundario">#ff000000</color>
+    <color name="colorSeleccionable">#ff5656f0</color>
+    <color name="widget_fondo_color">#f0f2f2f2</color>
+    <color name="color_fondo_azul">#ff00afef</color>
+    <color name="color_rojo">#ffff0000</color>
+    <color name="bg_sections">#8c000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="aa">#EEEEEE</color>
+    <color name="blue_100">#bbdefb</color>
+    <color name="blue_50">#e3f2fd</color>
+
+    <color name="red">#be5e4d</color>
+    <color name="red_text">#6f2a0a</color>
+	<color name="red_dark1">#990000</color>
+    <color name="red_dark2">#7a0000</color>
+    <color name="red_dark3">#4f0202</color>
+    <color name="dark_brown">#b01e13</color>
+    <color name="green">#5bb75b</color>
+    <color name="dark_green">#345f8a</color>
+    <color name="dark_blue">#1b2b3c</color>
+    <color name="blue">#1976d2</color>
+    <color name="red_wine">#ba4e45</color>
+    <color name="light_blue">#16c9dd</color>
+    <color name="CINZA_LIGHT">#efefef</color>
+    <color name="CINZA">#BEBEBE</color>
+</resources>

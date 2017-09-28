@@ -1,0 +1,102 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context=".controllers.Register" android:layout_width="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/loginPassword"
+            android:layout_alignStart="@+id/loginUser"
+            android:layout_alignLeft="@+id/loginUser"
+            android:id="@+id/relative1"
+
+    >
+        <include layout="@layout/layout_custom_action_bar_title"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="96dp"
+        >
+            <EditText
+                    android:id="@+id/userRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/userEmail"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="40dp"
+                    android:text="cclouds@gmail.com"/>
+
+            <EditText
+                    android:id="@+id/registerUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userRegister"
+                    android:hint="@string/userPassword"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Entrar"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_alignStart="@+id/userRegister"
+                    android:layout_alignLeft="@+id/userRegister"
+                    android:layout_alignEnd="@+id/userRegister"
+                    android:layout_alignRight="@+id/userRegister"
+                    />
+
+            <Button
+                    android:id="@+id/userRegisterBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="100dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:text="@string/doRegister"
+                    android:layout_below="@+id/registerUserPassword"
+                    android:layout_alignStart="@+id/registerUserPassword"
+                    android:layout_alignLeft="@+id/registerUserPassword"
+                    android:layout_alignEnd="@+id/registerUserPassword"
+                    android:layout_alignRight="@+id/registerUserPassword"
+                    android:background="@drawable/button_selector"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:hint="@string/userPasswordConfirm"
+                    android:id="@+id/userPasswordConfirmation"
+                    android:layout_below="@+id/registerUserPassword"
+                    android:layout_alignStart="@+id/registerUserPassword"
+                    android:layout_alignLeft="@+id/registerUserPassword"
+                    android:layout_alignEnd="@+id/registerUserPassword"
+                    android:layout_alignRight="@+id/registerUserPassword"
+                    android:textSize="20sp" />
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acceptTermsAndConditions"
+                    android:id="@+id/checkBox"
+                    android:layout_below="@+id/userPasswordConfirmation"
+                    android:layout_alignStart="@+id/userRegisterBtn"
+                    android:layout_alignLeft="@+id/userRegisterBtn"
+                    android:checked="true"
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>

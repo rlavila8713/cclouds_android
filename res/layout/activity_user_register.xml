@@ -1,0 +1,60 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/relative1"
+            >
+        <RelativeLayout
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView">
+            <EditText
+                    android:id="@+id/registerByEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/userEmail"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="40dp"
+                    />
+
+                <ImageView
+                        android:id="@+id/userRegisterByEmail"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="right"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:background="@drawable/button_selector"
+                        android:src="@drawable/checkmark_1"
+                        android:clickable="false"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/progressBar2"
+                    android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
